@@ -1,0 +1,23 @@
+<template>
+  <section id="about">
+    <h1>Welcome to Crypto Mafia City</h1>
+    <hr />
+    <p>
+      In 2045, countries around the globe have overprinted banknotes (fiat
+      currency) and caused hyperinflation. People no longer trust their
+      governments and start to lose interests in using banknotes. Instead of
+      using banknotes, cryptocurrency – MFC has become more popular than ever.
+      People start to fight over cryptocurrency because its lack of
+      availability. All the Mafias have started to rise as people are losing
+      their faith and hope in the governments. Different Mafias use their own
+      unique abilities to control economy in new era.
+    </p>
+    <p>Join Crypto Mafia City now and start to build your own mafia legacy.</p>
+  </section>
+</template>
+
+<script>
+export default {
+  name: "About",
+};
+</script>
