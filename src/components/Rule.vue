@@ -18,6 +18,8 @@
       owners of Crypto Mafia City are welcome to join for free and please share
       your valuable experiences with us!
     </p>
+    <h1>Buy Here!</h1>
+    <button type="button" class="btn btn-light">Buy Mafia</button>
   </section>
 </template>
 

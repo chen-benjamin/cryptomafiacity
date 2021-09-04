@@ -27,6 +27,12 @@
             <li class="nav-item">
               <a class="nav-link" href="#detail">Detail</a>
             </li>
+            <li>
+                <a href="#"><img src="../assets/discord-brands.png" class="svgIcon" width="32" height="32"></a>
+            </li>
+            <li>
+                <a href="#"><img src="../assets/twitter-brands.png" class="svgIcon" width="32" height="32"></a>
+            </li>
           </ul>
         </div>
       </div>
@@ -39,5 +45,7 @@ export default {
   name: "Header",
 };
 </script>
-
+.svgIcon {
+    fill: red;
+}
 <style scoped></style>
