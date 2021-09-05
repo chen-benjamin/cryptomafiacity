@@ -10,7 +10,7 @@
     <p>
       When your collection has at least 1 character in each mafia groups (6
       characters in total), you will get licenses or trading authorizations from
-      our random drops. As you activate your license, we will return gas fees as
+      our random airdrops. As you activate your license, we will return gas fees as
       bonus according to your license percentage on the 15th of each month.
     </p>
     <h2>Bonus Proportions:</h2>
@@ -25,7 +25,7 @@
     </ul>
     <p>For Example:</p>
     <p>
-      If Casino License is what you get from our drop, you will need to use
+      If Casino License is what you get from our airdrop, you will need to use
       characters in Wah Ching to activate the license (because Wah Ching is
       specialized in running casinos). The game will randomly assign 1 to 3
       activation value to characters. Each license will need 3 activation value
