@@ -1,5 +1,5 @@
 <template>
-  <section id="rule">
+  <section id="rule" class="text-white px-5">
     <h1>[Crypto Mafia City] – Gas fees will be used as follows</h1>
     <hr />
     <p>

@@ -1,7 +1,7 @@
 <template>
-  <footer class="text-center text-lg-start bg-dark text-muted">
+  <footer class="text-center text-white">
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    <div class="text-center p-4">
       © 2021 Copyright:
       <a class="text-reset fw-bold" href="https://cryptomafiacity.io/"
         >cryptomafiacity.io</a

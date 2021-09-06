@@ -1,25 +1,25 @@
 <template>
   <section id="bonus">
     <ul class="list-group text-start">
-      <li class="list-group-item bg-dark text-secondary">
-        10 Crypto Mafia City NFTs will be randomly dropped to our twitter
+      <li class="list-group-item bg-transparent bg-transparent">
+        10 Crypto Mafia City NFTs will be randomly airdropped to our twitter
         followers.
       </li>
-      <li class="list-group-item bg-dark text-secondary">
-        10 Crypto Mafia City NFTs will be randomly dropped to our discord
+      <li class="list-group-item bg-transparent bg-transparent">
+        10 Crypto Mafia City NFTs will be randomly airdropped to our discord
         members.
       </li>
-      <li class="list-group-item bg-dark text-secondary">
+      <li class="list-group-item bg-transparent bg-transparent">
         We will put 100 Crypto Mafia City NFTs in prize pool.
       </li>
-      <li class="list-group-item bg-dark text-secondary">
+      <li class="list-group-item bg-transparent bg-transparent">
         When you have at least 1 character in 6 different mafia groups (6
-        characters total), we will be dropping casino license, club license, sex
+        characters total), we will be airdropping casino license, club license, sex
         industry license, drug dealing license, arm dealing and guarding license
         randomly, then you can receive Crypto Mafia City rewards without any
         costs.
       </li>
-      <li class="list-group-item bg-dark text-secondary">
+      <li class="list-group-item bg-transparent bg-transparent">
         Our goal is to create our own cryptocurrency – MFC and to have it be
         traded on well-known cryptocurrency exchanges.
       </li>
@@ -32,3 +32,21 @@ export default {
   name: "Bonus",
 };
 </script>
+
+<style scoped>
+#bonus {
+  padding: 50px;
+  background-image: url("../assets/reel.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#bonus ul {
+  padding: 100px 50px 100px 15%;
+  font-size: 20px;
+}
+
+#bonus ul li {
+  color: white;
+}
+</style>

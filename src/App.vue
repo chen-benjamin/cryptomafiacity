@@ -43,6 +43,18 @@ export default {
 }
 
 section {
-  margin: 50px;
+  margin: 100px 20px;
+}
+
+h1 {
+  font-size: calc(1.4rem + 1.5vw);
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.bg-black {
+  background: black;
 }
 </style>
