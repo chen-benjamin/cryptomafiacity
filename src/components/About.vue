@@ -25,7 +25,7 @@
       <div class="row">
         <div class="col-12 buy-btn">
           <h1>Buy Here!</h1>
-          <button type="button" class="btn btn-light">Buy Mafia</button>
+          <button type="button" class="btn btn-none"></button>
         </div>
       </div>
     </div>
@@ -59,5 +59,23 @@ h1 {
 
 .buy-btn {
   padding: 100px 0 50px 0;
+}
+
+.buy-btn button {
+  width: 300px;
+  height: 115px;
+  background-image: url("../assets/buy.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  padding: 10px;
+}
+
+.buy-btn button:hover {
+  background-image: url("../assets/buy-over.png");
+}
+
+.buy-btn button:focus {
+  box-shadow: none;
 }
 </style>
