@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="navbar navbar-expand-lg px-5">
+    <nav class="navbar navbar-dark navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="../assets/logo.png" width="88" height="40" alt="" />
@@ -22,7 +22,7 @@
                 <a class="nav-link nav-icon" href="https://twitter.com/cryptomafiacity" target="_blank"><img src="../assets/twitter-brands.png" width="32" height="32"></a>
             </li>
             <li>
-                <a class="nav-link nav-icon" href="https://discord.com/invite/Gjjrm9JM4k" target="_blank"><img src="../assets/discord-brands.png" width="32" height="32"></a>
+                <a class="nav-link nav-icon" href="https://discord.gg/mp6v3kW3X7" target="_blank"><img src="../assets/discord-brands.png" width="32" height="32"></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -49,14 +49,21 @@ export default {
 <style scoped>
 .navbar {
   font-size: 24px;
+  padding: 0 3rem;
+}
+
+@media screen and (max-width: 992px){
+  .navbar {
+    padding: 0 1rem;
+  }
 }
 
 .nav-icon {
-  margin: 0 20PX 0 0;
   padding: 5px;
 }
 
 .nav-link {
   color: white;
+  margin: 0 0 0 40PX;
 }
 </style>

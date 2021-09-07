@@ -40,6 +40,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  font-family: 'Permanent Marker', cursive;
 }
 
 section {
@@ -51,7 +52,7 @@ h1 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .bg-black {

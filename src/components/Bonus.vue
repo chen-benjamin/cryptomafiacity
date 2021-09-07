@@ -14,14 +14,19 @@
       </li>
       <li class="list-group-item bg-transparent bg-transparent">
         When you have at least 1 character in 6 different mafia groups (6
-        characters total), we will be airdropping casino license, club license, sex
-        industry license, drug dealing license, arm dealing and guarding license
-        randomly, then you can receive Crypto Mafia City rewards without any
-        costs.
+        characters total), we will be airdropping casino license, club license,
+        sex industry license, drug dealing license, arm dealing and guarding
+        license randomly, then you can receive Crypto Mafia City rewards without
+        any costs.
       </li>
       <li class="list-group-item bg-transparent bg-transparent">
         Our goal is to create our own cryptocurrency – MFC and to have it be
         traded on well-known cryptocurrency exchanges.
+      </li>
+      <li class="list-group-item bg-transparent bg-transparent">
+        Crypto Mafia City will return 65% of gas fees as a bonus to every Crypto
+        Mafia City owner on the 15th of each month. 65% of gas fees are going to
+        be transferred to every owner after handling fees.
       </li>
     </ul>
   </section>
@@ -39,6 +44,7 @@ export default {
   background-image: url("../assets/reel.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  text-shadow: 0 0 5px black, 0 0 5px black;
 }
 
 #bonus ul {
@@ -46,7 +52,36 @@ export default {
   font-size: 20px;
 }
 
+@media screen and (max-width: 992px){
+  #bonus {
+    padding: 50px;
+    background-image: url("../assets/reel-straight.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  #bonus ul {
+    padding: 100px 50px 10rem 15%;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 576px){
+  #bonus {
+    padding: 10px;
+    background-image: url("../assets/reel-straight.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  #bonus ul {
+    padding: 100px 20px 15rem 10%;
+    font-size: 20px;
+  }
+}
+
 #bonus ul li {
   color: white;
+  border: none;
 }
 </style>

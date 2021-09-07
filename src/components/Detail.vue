@@ -1,10 +1,5 @@
 <template>
   <section id="detail" class="text-start text-white px-5">
-    <p>
-      Crypto Mafia City will return 65% of gas fees as a bonus to every Crypto
-      Mafia City owner on the 15th of each month. 65% of gas fees are going to
-      be transferred to every owner after handling fees.
-    </p>
     <h2>The details of distribution are as follows:</h2>
     <hr />
     <p>

@@ -2,10 +2,11 @@
   <section id="about" class="text-white">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6">
+        <!-- <div class="col-12 col-md-6">
           <img src="../assets/Logo.png" class="logo" />
-        </div>
-        <div class="col-12 col-md-6 text-start">
+        </div> -->
+        <div class="col-12 text-start">
+          <img src="../assets/Logo.png" class="logo" />
           <h1>Welcome to Crypto Mafia City</h1>
           <hr />
           <p>
@@ -21,6 +22,12 @@
           <p>Join Crypto Mafia City now and start to build your own mafia legacy.</p>
         </div>
       </div>
+      <div class="row">
+        <div class="col-12 buy-btn">
+          <h1>Buy Here!</h1>
+          <button type="button" class="btn btn-light">Buy Mafia</button>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -34,10 +41,23 @@ export default {
 <style scoped>
 h1 {
   color: #FBDA64;
+  font-size: 2.3rem;
 }
 
 .logo {
-  width: 100%;
-  padding:  0 20px;
+  width: 40%;
+  padding: 5px 30px 20px 0;
+  float: left;
+}
+
+@media screen and (max-width: 992px){
+  .logo {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+}
+
+.buy-btn {
+  padding: 100px 0 50px 0;
 }
 </style>

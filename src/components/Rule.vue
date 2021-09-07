@@ -1,6 +1,6 @@
 <template>
-  <section id="rule" class="text-white px-5">
-    <h1>[Crypto Mafia City] – Gas fees will be used as follows</h1>
+  <section id="rule" class="text-white text-start px-5">
+    <h1 class="text-center">Gas fees will be used as follows</h1>
     <hr />
     <p>
       65% - We will return 65% of gas fees as a bonus to every Crypto Mafia City
@@ -18,8 +18,6 @@
       owners of Crypto Mafia City are welcome to join for free and please share
       your valuable experiences with us!
     </p>
-    <h1>Buy Here!</h1>
-    <button type="button" class="btn btn-light">Buy Mafia</button>
   </section>
 </template>
 
