@@ -7,6 +7,7 @@
     <Bonus></Bonus>
     <Detail></Detail>
     <Footer></Footer>
+    <CountDown endTime="2021/10/02 06:00:00"></CountDown>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import Rule from "./components/Rule";
 import Bonus from "./components/Bonus";
 import Detail from "./components/Detail";
 import Footer from "./components/Footer";
+import CountDown from "./components/CountDown";
 
 export default {
   name: 'App',
@@ -29,6 +31,7 @@ export default {
     Bonus,
     Detail,
     Footer,
+    CountDown,
   },
 };
 </script>
@@ -45,6 +48,10 @@ export default {
 
 section {
   margin: 100px 20px;
+}
+
+section:first-of-type {
+  margin: 50px 20px;
 }
 
 h1 {

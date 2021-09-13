@@ -2,6 +2,9 @@
   <section id="about" class="text-white">
     <div class="container">
       <div class="row">
+        <div class="col-12 text-start">
+          <img src="../assets/city.png" width="100%" style="margin-bottom: 40px;opacity: 0.75;" />
+        </div>
         <!-- <div class="col-12 col-md-6">
           <img src="../assets/Logo.png" class="logo" />
         </div> -->
@@ -24,8 +27,9 @@
       </div>
       <div class="row">
         <div class="col-12 buy-btn">
+          <h1>9996 / 9996 </h1>
           <h1>Buy Here!</h1>
-          <button type="button" class="btn btn-none"></button>
+          <button type="button" class="btn btn-none" @click="mint"></button>
         </div>
       </div>
     </div>
@@ -35,6 +39,14 @@
 <script>
 export default {
   name: "About",
+  methods: {
+    mint() {
+      this.$swal({
+        title: 'Minting will be on',
+        confirmButtonText: 'CLOSE'
+      });
+    }
+  }
 };
 </script>
 
