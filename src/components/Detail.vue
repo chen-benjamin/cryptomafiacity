@@ -5,7 +5,7 @@
     <p>
       When your collection has at least 1 character in each mafia groups (6
       characters in total), you will get licenses or trading authorizations from
-      our random airdrops. As you activate your license, we will return gas fees
+      our random airdrops. As you activate your license, we will return Royalties
       as bonus according to your license percentage on the 15th of each month.
     </p>
     <div class="row">
@@ -22,7 +22,7 @@
         </ul>
       </div>
       <div class="col-md-12 col-lg-6 align-middle" style="padding-left: 0">
-        <img src="../assets/casino.jpg" width="100%" />
+        <img src="../assets/casino.png" width="100%" />
       </div>
     </div>
     <p>For Example:</p>

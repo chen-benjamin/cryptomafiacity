@@ -6,6 +6,7 @@
     <Rule></Rule>
     <Bonus></Bonus>
     <Detail></Detail>
+    <Team></Team>
     <Footer></Footer>
     <CountDown endTime="2021/10/02 06:00:00"></CountDown>
   </div>
@@ -18,6 +19,7 @@ import Gangs from "./components/Gangs";
 import Rule from "./components/Rule";
 import Bonus from "./components/Bonus";
 import Detail from "./components/Detail";
+import Team from "./components/Team";
 import Footer from "./components/Footer";
 import CountDown from "./components/CountDown";
 
@@ -30,6 +32,7 @@ export default {
     Rule,
     Bonus,
     Detail,
+    Team,
     Footer,
     CountDown,
   },

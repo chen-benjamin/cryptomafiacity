@@ -2,7 +2,7 @@
   <section id="bonus">
     <ul class="list-group text-start">
       <li class="list-group-item bg-transparent bg-transparent">
-        <img src="../assets/square.png" width="30" />
+        <img src="../assets/check-square.png" width="40" />
         10 Crypto Mafia City NFTs will be randomly airdropped to our twitter
         followers.
       </li>
@@ -30,8 +30,8 @@
       </li>
       <li class="list-group-item bg-transparent bg-transparent">
         <img src="../assets/square.png" width="30" />
-        Crypto Mafia City will return 65% of gas fees as a bonus to every Crypto
-        Mafia City owner on the 15th of each month. 65% of gas fees are going to
+        Crypto Mafia City will return 65% of Royalties as a bonus to every Crypto
+        Mafia City owner on the 15th of each month. 65% of Royalties are going to
         be transferred to every owner after handling fees.
       </li>
     </ul>

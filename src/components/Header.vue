@@ -22,7 +22,7 @@
                 <a class="nav-link nav-icon" href="https://twitter.com/cryptomafiacity" target="_blank"><img src="../assets/twitter-brands.png" width="32" height="32"></a>
             </li>
             <li>
-                <a class="nav-link nav-icon" href="https://discord.gg/mp6v3kW3X7" target="_blank"><img src="../assets/discord-brands.png" width="32" height="32"></a>
+                <a class="nav-link nav-icon" href="https://discord.com/invite/snZCThjQyT" target="_blank"><img src="../assets/discord-brands.png" width="32" height="32"></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -32,6 +32,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#detail">Detail</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
             </li>
           </ul>
         </div>
