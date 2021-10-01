@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="navbar navbar-dark navbar-expand-lg">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="../assets/logo-small.png" width="88" height="40" alt="" />
@@ -74,8 +74,8 @@ export default {
 <style scoped>
 .navbar {
   font-size: 24px;
-  padding: 0 3rem;
-  margin-top: 10px;
+  padding: 1rem 3rem;
+  background-color: black;
 }
 
 @media screen and (max-width: 992px){
