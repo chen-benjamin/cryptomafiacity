@@ -34,7 +34,7 @@ export async function BuyButtonPress(address, buyCount) {
     throw new Error("Please connect wallet first!");
   } else {
     let contract = new web3.eth.Contract(ABI, contractAddress);
-    var itemPrice = new bigNumber("64000000000000000");
+    var itemPrice = new bigNumber("45000000000000000");
     let sumAmount = itemPrice.multipliedBy(buyCount);
     return contract.methods
       .mintMafia(buyCount)
