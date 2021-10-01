@@ -1,14 +1,15 @@
 <template>
   <div id="app">
     <Header></Header>
-    <About></About>
+    <About endTime="2021/10/03 06:00:00"></About>
     <Gangs></Gangs>
     <Rule></Rule>
     <Bonus></Bonus>
     <Detail></Detail>
     <Team></Team>
+    <Info></Info>
     <Footer></Footer>
-    <CountDown endTime="2021/10/02 06:00:00"></CountDown>
+    <CountDown endTime="2021/10/03 06:00:00"></CountDown>
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import Rule from "./components/Rule";
 import Bonus from "./components/Bonus";
 import Detail from "./components/Detail";
 import Team from "./components/Team";
+import Info from "./components/Info";
 import Footer from "./components/Footer";
 import CountDown from "./components/CountDown";
 
@@ -33,6 +35,7 @@ export default {
     Bonus,
     Detail,
     Team,
+    Info,
     Footer,
     CountDown,
   },

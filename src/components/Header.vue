@@ -36,6 +36,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#team">Team</a>
             </li>
+            <li>
+              <button type="button" class="btn bg-transparent" @click="connect">{{ address ? address : 'Connect Wallet' }}</button>
+            </li>
           </ul>
         </div>
       </div>
@@ -44,8 +47,27 @@
 </template>
 
 <script>
+import { ConnectWallet } from "../services/wallet"
+
 export default {
   name: "Header",
+  data: () => {
+    return {
+      address: null
+    }
+  },
+  methods: {
+    connect: function() {
+      ConnectWallet()
+        .then(data => {
+          this.address = data.replace(data.substring(4, data.length -4), '...')
+          this.$store.commit('setAddress', data)
+        })
+        .catch(err => {
+          this.$swal(err.message, '', 'error')
+        })
+    }
+  }
 };
 </script>
 
@@ -53,6 +75,7 @@ export default {
 .navbar {
   font-size: 24px;
   padding: 0 3rem;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 992px){
@@ -66,7 +89,13 @@ export default {
 }
 
 .nav-link {
-  color: white;
   margin: 0 0 0 40PX;
+}
+
+.btn {
+  margin: 0 0 0 40PX;
+  font-size: 24px;
+  border: #FBDA64 solid 1px;
+  color: #FBDA64;
 }
 </style>

@@ -27,9 +27,8 @@
       </div>
       <div class="row">
         <div class="col-12 buy-btn">
-          <h1>9996 / 9996 </h1>
           <h1>Buy Here!</h1>
-          <button type="button" class="btn btn-none" @click="mint"></button>
+          <button type="button" class="btn btn-none" @click="buy"></button>
         </div>
       </div>
     </div>
@@ -37,14 +36,43 @@
 </template>
 
 <script>
+import { BuyButtonPress } from "../services/wallet"
+
 export default {
   name: "About",
+  props: ['endTime'],
   methods: {
-    mint() {
-      this.$swal({
-        title: 'Minting will be on',
-        confirmButtonText: 'CLOSE'
+    async buy() {
+      let t = new Date(this.endTime + ' GMT+08:00').getTime() - new Date().getTime();
+      if (t > 0) {
+        this.$swal({
+          title: 'Minting will be on 10/3 6:00 AM',
+          confirmButtonText: 'CLOSE'
+        })
+        return
+      }
+
+      const { value: amount } = await this.$swal({
+        title: 'How many do you want to buy?',
+        input: 'number',
+        inputLabel: 'amount',
+        inputAttributes: {
+          min: 1,
+          step: 1
+        },
+        inputValue: 1,
+        confirmButtonText: 'Buy'
       });
+
+      if (amount) {
+        BuyButtonPress(this.$store.state.address, amount)
+        .then(data => {
+          console.log(data)
+        })
+        .catch(err => {
+          this.$swal(err.message, '', 'error')
+        })
+      }
     }
   }
 };

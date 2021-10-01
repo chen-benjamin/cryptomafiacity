@@ -3,10 +3,11 @@
     <div class="container">
       <div class="row my-4">
         <div class="col-12 col-lg-8 text-center">
-            <h2>Mint will start on 10/2 6:00am (GMT+8)</h2>
+            <h2>Mint will start on 10/3 6:00am (GMT+8)</h2>
         </div>
         <div class="col-12 col-lg-4 text-center">
-            <h2>{{ time }}</h2>
+            <h2 v-if="timer !== '00 : 00 : 00 : 00'">{{ time }}</h2>
+            <button v-else type="button" class="btn bg-transparent" @click="buy">Buy Mafia</button>
         </div>
       </div>
     </div>
@@ -14,6 +15,8 @@
 </template>
 
 <script>
+import { BuyButtonPress } from "../services/wallet"
+
 export default {
   name: 'CountDown',
   props: ['endTime'],
@@ -41,6 +44,29 @@ export default {
         } else {
             clearInterval(this.timer);
         }
+    },
+    async buy() {
+      const { value: amount } = await this.$swal({
+        title: 'How many do you want to buy?',
+        input: 'number',
+        inputLabel: 'amount',
+        inputAttributes: {
+          min: 1,
+          step: 1
+        },
+        inputValue: 1,
+        confirmButtonText: 'Buy'
+      });
+
+      if (amount) {
+        BuyButtonPress(this.$store.state.address, amount)
+        .then(data => {
+          console.log(data)
+        })
+        .catch(err => {
+          this.$swal(err.message, '', 'error')
+        })
+      }
     }
   }
 }
@@ -49,5 +75,12 @@ export default {
 <style scoped>
 h2 {
     color: #FBDA64;
+}
+
+.btn {
+  margin: 0 0 0 40PX;
+  font-size: 24px;
+  border: #FBDA64 solid 1px;
+  color: #FBDA64;
 }
 </style>
