@@ -2,7 +2,7 @@ var Web3 = require("web3");
 var ABI = require("../../CryptoMafiaCity.json");
 const bigNumber = require("bignumber.js");
 var web3 = new Web3(window["ethereum"]);
-let contractAddress = "0x385eDC73Dd943b6135E5DD2FcefD7311C58E8710";
+let contractAddress = "0xcd117b1a0bff2a181cfb7017d0ea62b7025a9a6d";
 const prod = true;
 
 export async function ConnectWallet() {
