@@ -6,8 +6,7 @@
             <h2>Mint will start on 10/3 6:00am (GMT+8)</h2>
         </div>
         <div class="col-12 col-lg-4 text-center">
-            <h2 v-if="timer !== '00 : 00 : 00 : 00'">{{ time }}</h2>
-            <button v-else type="button" class="btn bg-transparent" @click="buy">Buy Mafia</button>
+            <button type="button" class="btn bg-transparent" @click="buy">Buy Mafia</button>
         </div>
       </div>
     </div>
